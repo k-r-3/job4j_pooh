@@ -17,4 +17,4 @@ recipients:
 
 env:
   global:
-    -CODECOV_TOKEN=
+    -CODECOV_TOKEN='7fc4747d-e199-45c6-921b-ae79448e2b23'
