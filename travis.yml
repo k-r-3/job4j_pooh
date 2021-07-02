@@ -14,3 +14,7 @@ recipients:
   - rke19922802@gmail.com
   - on_success: never # default: always
       on_failure: always # default: always
+
+env:
+  global:
+    -CODECOV_TOKEN=
