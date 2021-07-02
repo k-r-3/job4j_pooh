@@ -8,8 +8,8 @@ public class TriggerTest {
     @Test
     public void whenTrigger() {
         Trigger trigger = new Trigger();
-        int expected = 4;
-        assertThat(trigger.check(2), is(expected));
+        int expected = 8;
+        assertThat(trigger.check(4), is(expected));
     }
 
 }
