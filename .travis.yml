@@ -6,14 +6,14 @@ jdk:
 sudo: false
 
 after_success:
-  - bash < (curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash)
 
 notification:
-email:
-recipients:
-  - rke19922802@gmail.com
-  - on_success: never # default: always
-      on_failure: always # default: always
+  email:
+    recipients:
+      - rke19922802@gmail.com
+    on_success: never # default: always
+    on_failure: always # default: always
 
 env:
   global:
