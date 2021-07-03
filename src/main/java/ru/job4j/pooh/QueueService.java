@@ -13,7 +13,7 @@ public class QueueService implements Service {
         queue.putIfAbsent(req.name(), new ConcurrentLinkedQueue<>());
         if (method.equals("POST")) {
                 queue.get(req.name()).offer(req.message());
-            return new Resp("OK", 200);
+            return new Resp("", 200);
         } else {
             String text = queue.get(req.name()).poll();
             return new Resp("\r\n" + text, 200);
