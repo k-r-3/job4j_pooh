@@ -4,7 +4,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class QueueService implements Service {
-    private static ConcurrentHashMap<String, ConcurrentLinkedQueue<String>> queue = new ConcurrentHashMap<>();
+    private static ConcurrentHashMap<String, ConcurrentLinkedQueue<String>>
+            queue = new ConcurrentHashMap<>();
 
     @Override
     public Resp process(Req req) {
